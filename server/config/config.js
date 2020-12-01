@@ -38,6 +38,10 @@ if (process.env.NODE_ENV === 'desa') {
     urlDB = process.env.MONGO_URL;
 }
 
-//MONGO_URL se hace desde linea de comandos con
-// heroku set, para verla ejecutar heroku config
 process.env.URLDB = urlDB;
+
+// ==================
+//  Google Client ID
+// ==================
+
+process.env.CLIENT_ID = process.env.CLIENT_ID || '1031341953561-vj9s0mbh9tahgncqjfe30db5ahmfmv3a.apps.googleusercontent.com';
